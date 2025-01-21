@@ -205,7 +205,7 @@ if ! getent group "$app_guid" | grep -qw "$app_uid"; then
     usermod -a -G "$app_guid" "$app_uid"
     echo ""
     echo -e "Added User ${yellow}$app_uid${reset} to Group ${yellow}$app_guid${reset}."
-    sleep 3
+    # sleep 3
 fi
 
 # Stop the App if running
